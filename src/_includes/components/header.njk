@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="container header-wrap">
+    <a href="/" class="logo">
+      🍔 Logo
+    </a>
+    <nav>
+      <ul class="nav-list">
+        {% for link in nav %}
+          <li><a href="{{link.href}}" class="nav-list-link">{{link.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

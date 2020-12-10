@@ -1,0 +1,34 @@
+{
+  "name": "11ty-scss-starter",
+  "version": "1.0.0",
+  "description": "Simple Eleventy SCSS Starter",
+  "scripts": {
+    "watch:sass": "sass --no-source-map --watch src/assets/styles:dist/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass --no-source-map src/assets/styles:dist/css",
+    "build:eleventy": "eleventy",
+    "clean": "del-cli dist",
+    "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r",
+    "start": "npm-run-all clean build:sass --parallel watch:*",
+    "build": "npm-run-all clean build:sass build:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1itvinka/11ty-scss-starter"
+  },
+  "author": "Anastasiya Tyshkavets",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.0.4",
+    "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "sass": "^1.30.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

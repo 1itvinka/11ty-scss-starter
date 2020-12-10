@@ -1,0 +1,39 @@
+.header {
+  background: $header-bg-color;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  background: $header-bg-color;
+}
+
+.logo {
+  font-size: 1.1rem;
+
+  @include mq(md) {
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-link {
+  margin-left: 40px;
+  font-style: normal;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}

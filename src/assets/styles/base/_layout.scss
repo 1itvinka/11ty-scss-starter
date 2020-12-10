@@ -1,0 +1,17 @@
+body {
+  background-color: $bg-color;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: $container-max-width;
+  min-width: $min-width;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+
+.content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,12 @@
+// UTILITIES
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// BASE MODULES (partials with global scope)
+@import 'base/normalize';
+@import 'base/layout';
+@import 'base/typography';
+
+// COMPONENTS (partials with local scope to a component)
+@import 'components/_header';

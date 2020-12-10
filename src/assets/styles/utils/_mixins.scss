@@ -1,0 +1,53 @@
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin button-reset() {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+@mixin svg-icon($width: '', $height: '') {
+  display: inline-block;
+  @if ($width != '') {
+    width: $width + px;
+  }
+  @if ($height != '') {
+    height: $height + px;
+  }
+}
+
+/// Creates media query for breakpoint and bigger
+///
+/// @param {string} $name - The name of the breakpoint
+/// @param {boolean} $print [false] - If the styles should also apply in print
+@mixin mq($name, $print: false) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media #{if($print, 'print, all ', 'all')} and (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+/// Creates media query for smaller than breakpoint
+///
+/// @param {string} $name - The name of the breakpoint
+/// @param {boolean} $print [false] - If the styles should also apply in print
+@mixin mq-down($name, $print: false) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media #{if($print, 'print, all ', 'all')} and (max-width: ($min - 1px)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
