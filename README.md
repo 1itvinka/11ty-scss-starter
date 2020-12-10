@@ -2,7 +2,7 @@
 
 🔗 [Demo](https://11ty-scss-starter.anastasiya.dev/)
 
-Kick off your "desing to layout" project with this simple boilerplate.
+Kick off your "desing to HTML/SCSS" project with this simple boilerplate.
 
 - Split HTML into separate files.
 - Reuse snippets in your HTML.
