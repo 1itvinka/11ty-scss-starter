@@ -8,7 +8,7 @@ Kick off your "desing to HTML/SCSS" project with this simple boilerplate.
 - Reuse snippets in your HTML.
 - Compile and watch your SCSS.
 - Use autoprefixer.
-- Use other [11ty](https://www.11ty.dev/) features.
+- Use `for` loops, `if`/`else` statements, and other [11ty](https://www.11ty.dev/) features.
 
 ## 🚀 Quick Start
 
