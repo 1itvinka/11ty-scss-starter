@@ -31,8 +31,4 @@ Your site is now running at http://localhost:8080.
 - Star this repo.
 - Create pull requests, submit bugs, or suggest new features.
 
-## 👩‍💻 Can I Hire You?
-
-Yes! If your company can sponsor a Tier 2 UK visa. Please drop me a note to tyshkavets@gmail.com. I'll be happy to work with you!
-
 Created with ❤️ and ☕ by [Anastasiya Tyshkavets](https://anastasiya.dev/).
